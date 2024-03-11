@@ -30,3 +30,14 @@ Feature extraction
 Training of model
 Validation of the model
 Hyperparameter tuning
+
+
+A preview of the dataset is shown as follows
+![image](https://github.com/adeyeyealex/Research-Practicum-I/assets/77544400/e192e33f-f25d-4c4d-bd09-6d8b4541eef1)
+
+The dataset has some unwanted feature that were taken out for the smooth running of the model training. This include the id and the title of the news that was release.
+
+![image](https://github.com/adeyeyealex/Research-Practicum-I/assets/77544400/6026da58-665c-455e-84d5-0a8ef3ffd63b)
+The label feature was reassigned numbers for easy training.
+
+
