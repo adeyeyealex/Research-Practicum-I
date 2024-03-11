@@ -36,6 +36,10 @@ A preview of the dataset is shown as follows
 
 ![image](https://github.com/adeyeyealex/Research-Practicum-I/assets/77544400/e192e33f-f25d-4c4d-bd09-6d8b4541eef1)
 
+A first glance at the shape of the dataset used showed that it has 2297 dataset each on each of the label that will be observed. There was a null value that was observe in the dataset but discovered to be in the title feature was is not what we would be looking at today. The null value was filled with blank space.
+
+![image](https://github.com/adeyeyealex/Research-Practicum-I/assets/77544400/c92d4764-9bb1-4ace-8282-f1aa2a521d75)
+
 THE CLEANING AND PREPROCESSING PROCESS
 
 The dataset has some unwanted feature that were taken out for the smooth running of the model training. This include the id and the title of the news that was release.
@@ -64,6 +68,35 @@ WORDCLOUD BEFORE STREMMING PROCESS
 
 WORDCLOUD AFTER STREMMING PROCESS
 
+TFIDFVectorizer was used in the preprocessing steps in converting text data in numerical representation that could be used by machine learning model. the importance of each word is taken note off.
+
 ![image](https://github.com/adeyeyealex/Research-Practicum-I/assets/77544400/67e5c3ac-eb12-4e91-a422-f45954fd3077)
 
+The dataset was splitted into trained and test dataset. The feature will be the text feature which is our dependent variable and our target which will be the dependent variable. 20% will be used for training of the dataset while the rest which is the 20% will be used in testing the validity of the trained model.
 
+5 different models were ran and the outcome were compared to know whichis most effective in the evaluation of the dataset and similar dataset.
+There were different metrics used in evaluation of the output of the models. This includes
+Confusion Matrix
+Classification Report
+Accuracy score
+
+The result after running a logistic regreesion on the dataset is as follows
+![image](https://github.com/adeyeyealex/Research-Practicum-I/assets/77544400/ba0cc0d9-295d-4425-a378-cb7c86f9668d)
+
+The result after running a SVC on the dataset is as follows
+![image](https://github.com/adeyeyealex/Research-Practicum-I/assets/77544400/1532c7a0-6698-4823-a0c4-eaa83e49b05c)
+
+The result after running a Decision Tree on the dataset is as follows
+![image](https://github.com/adeyeyealex/Research-Practicum-I/assets/77544400/7d62b56d-5f12-4c4a-a388-59ecd70132fe)
+
+The result after running a Decision Tree on the dataset is as follows
+![image](https://github.com/adeyeyealex/Research-Practicum-I/assets/77544400/00c38c02-5dd1-4761-9838-9e414b04fb69)
+
+![image](https://github.com/adeyeyealex/Research-Practicum-I/assets/77544400/87893598-9bf0-455a-a3a7-8b8c77c20b28)
+
+Comparing all the scores and analyzing the metrics in the diagrams above, We could see that accuracy is actually low when precision and recall is put into consideration. That being said, The tree models (Decision Tree and Random Forest) did actually perform lower than the (Logistic Regresion and SVC).
+
+![image](https://github.com/adeyeyealex/Research-Practicum-I/assets/77544400/630ef489-5852-484d-a42b-dd72bb7dd2e6)
+A barchart of the four models are also done side by side 
+
+LSTM a neural network was also used in evaluating the dataset. Embedding and pad sequences was utilized to ensure uniformity in analysis. The result actually came out good with much hyper-parameter tuning. I realized that the more hyper-parameter tuning that was done led to reduction in accuracy and an increase in loss.
